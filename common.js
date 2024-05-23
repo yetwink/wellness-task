@@ -8,8 +8,6 @@ let tl = gsap.timeline({
         trigger: cards[0],
         start: 'bottom center+=330vh',
         end: 'bottom center-=235vh',
-        // markers: true,
-        // pin: true,
         scrub: true,
     }
 })
@@ -24,8 +22,6 @@ let tl2 = gsap.timeline({
         trigger: cards[1],
         start: 'bottom center+=330vh',
         end: 'bottom center-=235vh',
-        markers: true,
-        // pin: true,
         scrub: true,
     }
 })
