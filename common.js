@@ -10,7 +10,6 @@ for(let i = 0; i < cards.length; i++){
                 trigger: cards[i],
                 start: 'bottom center+=35%',
                 end: 'bottom center-=25%',
-                markers: true,
                 scrub: true,
             }
         })
