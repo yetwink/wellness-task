@@ -1,0 +1,176 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+h2 {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+header {
+    background-color: gray;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__info{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.main {
+    width: 100vw;
+    height: 300vh;
+    margin-top: 70px;
+}
+
+.main-wrapper {
+    width: 100%;
+    height: 275vh;
+    display: flex;
+    position: relative;
+}
+
+.wellness-wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /*  */
+    flex: 0 0 50%;
+}
+
+.wellness-cards{
+    width: 100%;
+    height: 100vh;
+}
+
+.wellness-card{
+    width: 100%;
+    height: 100vh;
+}
+
+.wellness-card-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wellness-fixed{
+    width: 50vw;
+    height: calc(60vh - 15px); /* 15px - эт на бордер если буду добавлять */
+    margin: 15vh 0;
+    position: sticky;
+    
+    /* transform: translateY(-50%); */
+    right: 0;
+    top: 25%;
+    flex: 0 0 50%;
+}
+
+
+.wellness-fixed__card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 8px solid #fff;
+    border-left: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-radius: 3%; */
+    overflow: hidden;
+}
+
+.wellness-fixed__card:nth-child(1) {
+    z-index: 3;
+    clip-path: inset(0 0 0% 0);
+}
+.wellness-fixed__card:nth-child(2) {
+    z-index: 2;
+    clip-path: inset(0 0 0% 0);
+    border-top: 8px solid #000;
+    border-left: 8px solid #000;
+    border-bottom: 8px solid #000;
+}
+.wellness-fixed__card:nth-child(3) {
+    z-index: 1;
+    clip-path: inset(0 0 0% 0);
+}
+
+
+
+.wellness-card{
+    width: 200%;
+    height: calc(100vh - 70px);
+    background: #000;
+    color: #fff;
+}
+
+.wellness-card:nth-child(2) {
+    background: #fff;
+    color: #000;
+}
+
+
+.wellness-fixed__card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fake {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
